@@ -30,8 +30,7 @@ public class Calculadora {
     }
     public void exponenciar(int valor) throws Exception {
         if (valor > 10)
-            throw new Exception("Expoente incorreto, valor máximo é
-        10.");
+            throw new Exception("Expoente incorreto, valor máximo é 10.");
         for(int i=1;i<10;i++){
             this.memoria*=this.memoria;
     }
