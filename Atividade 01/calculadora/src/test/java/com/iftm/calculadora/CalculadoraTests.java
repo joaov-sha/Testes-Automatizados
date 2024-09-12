@@ -3,13 +3,12 @@ package com.iftm.calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-public class CalculadoraTests {
+class CalculadoraTests {
     
     @Test
-    public void testeSoma(){
+    void testeSoma(){
         Calculadora calc = new Calculadora();
         calc.somar(3);
         int resultado = calc.getMemoria();
@@ -18,7 +17,7 @@ public class CalculadoraTests {
     }
 
     @Test
-    public void testeSubtracao(){
+    void testeSubtracao(){
         Calculadora calc = new Calculadora();
         calc.subtrair(3);
         int resultado = calc.getMemoria();
@@ -27,7 +26,7 @@ public class CalculadoraTests {
     }
 
     @Test
-    public void testeMultiplicacao(){
+    void testeMultiplicacao(){
         Calculadora calc = new Calculadora();
         calc.multiplicar(3);
         int resultado = calc.getMemoria();
@@ -36,7 +35,7 @@ public class CalculadoraTests {
     }
 
     @Test
-    public void testeDivisao() throws Exception {
+    void testeDivisao() throws Exception {
         Calculadora calc = new Calculadora();
         calc.dividir(3);
         int resultado = calc.getMemoria();
@@ -45,7 +44,7 @@ public class CalculadoraTests {
     }
 
     @Test
-    public void testeExponencial() throws Exception {
+    void testeExponencial() throws Exception {
         Calculadora calc = new Calculadora();
         calc.exponenciar(3);
         int resultado = calc.getMemoria();
